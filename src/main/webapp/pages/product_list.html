@@ -1,0 +1,13 @@
+<div>
+    <div class="input-group col-md-8 col-md-offset-2">
+        <span for="search" class="input-group-addon">Search product</span>
+        <input type="text" class="form-control" placeholder="Product name here" ng-model="q">
+    </div>
+
+    <br />
+    <div class="row">
+        <div class="col-md-4 col-sm-6" ng-repeat="product in products| filter:q">
+            <product-thumbnail product="product"></product-thumbnail>
+        </div>
+    </div>
+</div>  
